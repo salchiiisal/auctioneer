@@ -15,3 +15,13 @@ Auction::Auction(AuctionId auction_id,
 
 Auction::Auction(AuctionId auction_id, std::string item)
     : Auction(auction_id, AuctionType::English, item, 0.0, 0.0, 1.0) {}
+
+AuctionId Auction::auction_id() const { return auction_id_; }
+AuctionType Auction::type() const { return auction_type_; }
+std::string_view Auction::item() const { return item_; }
+Price Auction::starting_price() const { return starting_price_; }
+Price Auction::reserve_price() const { return reserve_price_; }
+Price Auction::tick() const { return tick_; }
+Price Auction::current_highest_bid() const {
+  return current_highest_bid_price_;
+}
