@@ -7,17 +7,26 @@
 
 class Auction {
  public:
-  explicit Auction(std::string item) : item_{std::move(item)} {}
+  Auction(AuctionId auction_id,
+          AuctionType auction_type,
+          std::string item,
+          Price starting_price,
+          Price reserve_price,
+          Price tick);
+
+  Auction(AuctionId auction_id, std::string item);
 
  private:
-  // structs
-  struct BidEntry {
-    // TODO:
-  };
-
   // member variables
   AuctionId auction_id_;
-  std::string item_{};
   AuctionType auction_type_;
-  std::unordered_map<BidId, BidEntry> bids_;
+  std::string item_{};
+  Price starting_price_;
+  Price reserve_price_;
+  Price tick_;
+  Price current_highest_bid_price_{0.0};
+
+  std::vector<Bid> bids_;
 };
+
+using AuctionPointer = std::unique_ptr<Auction>;
