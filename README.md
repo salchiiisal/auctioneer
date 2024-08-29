@@ -16,7 +16,7 @@ The buyers will start bidding with a low price, then the bid prices go up until 
 Open descending auction.
 The seller will initiate a high value and bidders will bid down from this high price. The bid price will go down until a bidder’s willing to take it.[^1]
 
-### Vickrey
+### Vickrey[^2]
 
 Sealed-bid second-price auction.
 Bidders submit written bids without knowing the bids of the other people in the auction. The highest bidder wins but the price paid is the second-highest bid.
@@ -35,3 +35,4 @@ cmake ..; make;
 ```
 
 [^1]: [Four Common Types of Auctions](https://blogs.cornell.edu/info2040/2021/11/29/four-common-types-of-auctions/)
+[^2]: https://en.wikipedia.org/wiki/Vickrey_auction
