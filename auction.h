@@ -16,6 +16,15 @@ class Auction {
 
   Auction(AuctionId auction_id, std::string item);
 
+  // getters & setters
+  AuctionId auction_id() const;
+  AuctionType type() const;
+  std::string_view item() const;
+  Price starting_price() const;
+  Price reserve_price() const;
+  Price tick() const;
+  Price current_highest_bid() const;
+
  private:
   // member variables
   AuctionId auction_id_;
