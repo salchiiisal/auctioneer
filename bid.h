@@ -1,4 +1,6 @@
 #pragma once
+#include <list>
+
 #include "custom_types.h"
 
 class Bid {
@@ -15,3 +17,6 @@ class Bid {
   UserId user_id_;
   Price price_;
 };
+
+using BidPointer = std::shared_ptr<Bid>;
+using BidPointers = std::list<Bid>;
