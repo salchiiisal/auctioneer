@@ -21,11 +21,6 @@ The seller will initiate a high value and bidders will bid down from this high p
 Sealed-bid second-price auction.
 Bidders submit written bids without knowing the bids of the other people in the auction. The highest bidder wins but the price paid is the second-highest bid.
 
-### Double
-
-Buyers submit their bids and potential sellers submit their ask prices.
-When a buyer’s price and a seller’s asking price match, and the trade proceeds at that price.
-
 ## Compilation
 
 ```
