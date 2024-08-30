@@ -11,6 +11,12 @@ class AuctionHouse {
  private:
   // functions
 
+  // create new Auction
+  void StartAuction();
+
+  // end existing Auction
+  Price EndAuction(AuctionId auction_id);
+
   // member variables
   std::unordered_map<AuctionId, AuctionPointer> active_auctions_;
 
